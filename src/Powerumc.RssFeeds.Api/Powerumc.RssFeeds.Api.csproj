@@ -3,7 +3,6 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="Controllers" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>
@@ -33,6 +32,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Powerumc.RssFeeds.Database\Powerumc.RssFeeds.Database.csproj" />
+    <ProjectReference Include="..\Powerumc.RssFeeds.Domain\Powerumc.RssFeeds.Domain.csproj" />
     <ProjectReference Include="..\Powerumc.RssFeeds\Powerumc.RssFeeds.csproj" />
   </ItemGroup>
 </Project>

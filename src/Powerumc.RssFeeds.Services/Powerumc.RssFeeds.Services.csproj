@@ -3,7 +3,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="Requests" />
-    <Folder Include="Responses" />
+    <Folder Include="AggregatesModels" />
+    <Folder Include="Events" />
+    <Folder Include="Handlers" />
+    <Folder Include="Models" />
   </ItemGroup>
 </Project>
