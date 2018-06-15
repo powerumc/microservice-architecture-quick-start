@@ -3,8 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Internal;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
-using NLog.Extensions.Logging;
-using NLog.Web;
 
 namespace Powerumc.RssFeeds.Database
 {

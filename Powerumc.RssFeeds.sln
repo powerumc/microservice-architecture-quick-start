@@ -18,6 +18,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Powerumc.RssFeeds.Api", "src\Powerumc.RssFeeds.Api\Powerumc.RssFeeds.Api.csproj", "{D0834ED4-B119-4E60-BE4F-D064A15B656D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{382444C1-E68D-47F7-983B-7280F3B207D6}"
+ProjectSection(SolutionItems) = preProject
+	README.md = README.md
+EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CF488C16-81FF-4E57-8BFB-43238C6F573A}"
 EndProject

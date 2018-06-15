@@ -9,5 +9,10 @@ namespace Powerumc.RssFeeds.Extensions
         {
             logger.LogError($"{traceId}|{exception}");
         }
+        
+        public static void Log(this ILogger logger, TraceId traceId, string message)
+        {
+            logger.LogTrace($"{traceId}|{message}");
+        }
     }
 }

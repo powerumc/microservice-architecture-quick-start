@@ -4,8 +4,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="AggregatesModels" />
-    <Folder Include="Events" />
-    <Folder Include="Handlers" />
-    <Folder Include="Models" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Powerumc.RssFeeds.Domain\Powerumc.RssFeeds.Domain.csproj" />
+    <ProjectReference Include="..\Powerumc.RssFeeds.Repositories\Powerumc.RssFeeds.Repositories.csproj" />
+    <ProjectReference Include="..\Powerumc.RssFeeds\Powerumc.RssFeeds.csproj" />
   </ItemGroup>
 </Project>

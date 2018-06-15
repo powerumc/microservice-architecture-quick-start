@@ -3,6 +3,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Powerumc.RssFeeds.Database\Powerumc.RssFeeds.Database.csproj" />
     <ProjectReference Include="..\Powerumc.RssFeeds\Powerumc.RssFeeds.csproj" />
   </ItemGroup>
 </Project>

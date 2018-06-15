@@ -55,20 +55,11 @@ namespace Powerumc.RssFeeds.Api
                 app.UseHsts();
             }
 
+            app.UseRssFeedsConfigurationsOptions();
+            feedsDbContextFactory.Seed();
+            
             app.UseHttpsRedirection();
             app.UseMvc();
-
-            app.UseRssFeedsConfigurationsOptions();
-
-            feedsDbContextFactory.Seed();
-
-            using (var dbContext = feedsDbContextFactory.Create())
-            {
-                Console.WriteLine("---------------------------------------------------------------------");
-                Console.WriteLine("***" + dbContext.RssFeeds.Count());
-                dbContext.RssFeeds.ToList().ForEach(o => Console.WriteLine($"*** {o.Id}, {o.Title}"));
-                Console.WriteLine("---------------------------------------------------------------------");
-            }
         }
     }
 }

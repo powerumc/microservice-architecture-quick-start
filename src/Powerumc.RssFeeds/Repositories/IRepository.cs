@@ -1,21 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 using Powerumc.RssFeeds.Domain;
 
 namespace Powerumc.RssFeeds.Repositories
 {
     public interface IRepository<TDatabaseModel, in TKey>
     {
-        TDatabaseModel Get(TKey id);
+        Task<TDatabaseModel> GetAsync(TKey id);
 
-        PagingResult<IEnumerable<TDatabaseModel>> GetAll(Expression<Predicate<TDatabaseModel>> expression,
-            PagingInfo pagingInfo = null);
+        Task<PagingResult<IEnumerable<TDatabaseModel>>> List(Expression<Func<TDatabaseModel, bool>> expression,
+            PagingInfo pagingInfo);
 
-        void Create(TDatabaseModel model);
+        Task<TDatabaseModel> CreateAsync(TDatabaseModel model);
 
-        void Update(TDatabaseModel model);
+        Task<TDatabaseModel> UpdateAsync(TDatabaseModel model);
         
-        void Remove(TDatabaseModel model);
+        Task RemoveAsync(TDatabaseModel model);
     }
 }

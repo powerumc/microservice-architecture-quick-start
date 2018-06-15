@@ -3,9 +3,6 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="wwwroot\" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Update="nlog.windows.config" CopyToOutputDirectory="PreserveNewest" />
     <Content Update="nlog.linux.config" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
@@ -33,6 +30,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Powerumc.RssFeeds.Database\Powerumc.RssFeeds.Database.csproj" />
     <ProjectReference Include="..\Powerumc.RssFeeds.Domain\Powerumc.RssFeeds.Domain.csproj" />
+    <ProjectReference Include="..\Powerumc.RssFeeds.Repositories\Powerumc.RssFeeds.Repositories.csproj" />
+    <ProjectReference Include="..\Powerumc.RssFeeds.Services\Powerumc.RssFeeds.Services.csproj" />
     <ProjectReference Include="..\Powerumc.RssFeeds\Powerumc.RssFeeds.csproj" />
   </ItemGroup>
 </Project>
