@@ -11,8 +11,9 @@ C# 언어와 ASP.NET Core 환경을 이용하여 마이크로서비스 시스템
 - [x] Entity Framework Core DbContext
 - [x] TraceId about Request
 - [ ] Exception Handling
-- [ ] Guard
+- [x] Guard
 - [ ] AutoMapper
+- [x] Data Protection
 
 Domain Driven Development
 - [x] ValueObject

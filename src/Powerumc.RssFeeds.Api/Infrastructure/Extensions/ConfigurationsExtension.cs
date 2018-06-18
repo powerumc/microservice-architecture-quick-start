@@ -1,18 +1,22 @@
 ﻿using System;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Powerumc.RssFeeds.Api.Infrastructure.Extensions
 {
     public static class ConfigurationsExtension
     {
-        public static PowerumcRssFeedsConfigurationsOptions AddRssFeedsConfigurations(this IServiceCollection serviceCollection,
+        public static PowerumcRssFeedsConfigurationsOptions AddRssFeedsConfigurations(
+            this IServiceCollection serviceCollection,
+            IHostingEnvironment hostingEnvironment, 
             Action<PowerumcRssFeedsConfigurationsOptions> options)
         {
-            var configurationsOptions = new PowerumcRssFeedsConfigurationsOptions(serviceCollection);
+            var configurationsOptions =
+                new PowerumcRssFeedsConfigurationsOptions(serviceCollection, hostingEnvironment);
 
             options(configurationsOptions);
-            
+
             return configurationsOptions;
         }
 

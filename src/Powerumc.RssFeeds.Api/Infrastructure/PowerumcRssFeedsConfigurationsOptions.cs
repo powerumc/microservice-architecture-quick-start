@@ -1,5 +1,7 @@
 ﻿using System.IO;
 using System.Linq;
+using Microsoft.AspNetCore.DataProtection;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -13,10 +15,13 @@ namespace Powerumc.RssFeeds.Api.Infrastructure
     public class PowerumcRssFeedsConfigurationsOptions
     {
         private readonly IServiceCollection _serviceCollection;
+        private readonly IHostingEnvironment _env;
 
-        public PowerumcRssFeedsConfigurationsOptions(IServiceCollection serviceCollection)
+        public PowerumcRssFeedsConfigurationsOptions(IServiceCollection serviceCollection,
+            IHostingEnvironment env)
         {
             _serviceCollection = serviceCollection;
+            _env = env;
         }
 
         public PowerumcRssFeedsConfigurationsOptions AddDefault()
@@ -24,6 +29,15 @@ namespace Powerumc.RssFeeds.Api.Infrastructure
             _serviceCollection.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             _serviceCollection.AddSingleton<IRssFeedsDbContextFactory, RssFeedsDbContextFactory>();
 
+            return this;
+        }
+        
+        public PowerumcRssFeedsConfigurationsOptions AddDataProtection()
+        {
+            _serviceCollection.AddDataProtection()
+                .PersistKeysToFileSystem(new DirectoryInfo(Path.Combine(_env.ContentRootPath, "../DataProtection-Keys")))
+                .DisableAutomaticKeyGeneration();
+            
             return this;
         }
 

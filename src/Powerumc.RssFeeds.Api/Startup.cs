@@ -18,10 +18,13 @@ namespace Powerumc.RssFeeds.Api
 {
     public class Startup
     {
+        private readonly IHostingEnvironment _env;
         public IConfiguration Configuration { get; }
 
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration,
+            IHostingEnvironment env)
         {
+            _env = env;
             Configuration = configuration;
         }
 
@@ -33,9 +36,10 @@ namespace Powerumc.RssFeeds.Api
 
             services.AddApiVersioning();
 
-            services.AddRssFeedsConfigurations(options =>
+            services.AddRssFeedsConfigurations(_env, options =>
             {
                 options.AddDefault()
+                    .AddDataProtection()
                     .AddDbContext()
                     .AddCors()
                     .AddSwagger()
