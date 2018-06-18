@@ -6,9 +6,9 @@ using Powerumc.RssFeeds.Domain;
 
 namespace Powerumc.RssFeeds.Repositories
 {
-    public interface IRepository<TDatabaseModel, in TKey>
+    public interface IRepository<TDatabaseModel>
     {
-        Task<TDatabaseModel> GetAsync(TKey id);
+        Task<TDatabaseModel> GetAsync(long id);
 
         Task<PagingResult<IEnumerable<TDatabaseModel>>> List(Expression<Func<TDatabaseModel, bool>> expression,
             PagingInfo pagingInfo);
