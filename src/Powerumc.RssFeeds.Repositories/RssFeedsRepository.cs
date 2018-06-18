@@ -13,7 +13,7 @@ using Powerumc.RssFeeds.Repositories;
 namespace Powerumc.RssFeeds.Domain
 {
     [Register(typeof(IRssFeedsRepository))]
-    public class RssFeedsRepository : Repository<Database.Models.RssFeed>
+    public class RssFeedsRepository : Repository<Database.Models.RssFeed>, IRssFeedsRepository
     {
         public RssFeedsRepository(ILogger<Repository<RssFeed>> logger,
             IRssFeedsDbContextFactory dbContextFactory) : base(logger, dbContextFactory)
