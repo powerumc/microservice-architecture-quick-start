@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.Design;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 using Powerumc.RssFeeds.Database;
 using Powerumc.RssFeeds.Database.Models;
-using Powerumc.RssFeeds.Repositories;
 
-namespace Powerumc.RssFeeds.Domain
+namespace Powerumc.RssFeeds.Repositories
 {
     [Register(typeof(IRssFeedsRepository))]
     public class RssFeedsRepository : Repository<Database.Models.RssFeed>, IRssFeedsRepository
