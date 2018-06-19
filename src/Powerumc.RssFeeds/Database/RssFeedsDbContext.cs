@@ -16,6 +16,10 @@ namespace Powerumc.RssFeeds.Database
             modelBuilder.Entity<RssFeed>()
                 .HasIndex(o => o.Url)
                 .IsUnique();
+
+            modelBuilder.Entity<RssFeedItem>()
+                .HasIndex(o => o.Url)
+                .IsUnique();
         }
     }
 }

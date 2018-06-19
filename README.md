@@ -17,6 +17,7 @@ C# 언어와 ASP.NET Core 환경을 이용하여 마이크로서비스 시스템
 - [x] Polly
 
 Domain Driven Development
+- [x] Aggregate Root
 - [x] ValueObject
 - [x] CQRS
 - [ ] Event Sourcing

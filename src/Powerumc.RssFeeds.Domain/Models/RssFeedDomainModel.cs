@@ -3,13 +3,15 @@ using Powerumc.RssFeeds.ValueObjects;
 
 namespace Powerumc.RssFeeds.Domain.Models
 {
-    public class RssFeedDomainModel : DomainModel
+    public class RssFeedDomainModel : DomainModel, IAggregateRoot
     {
-        private readonly Author _author;
+        public Author Author { get; }
 
         public RssFeedDomainModel(Author author)
         {
-            _author = author;
+            Guard.ThrowIfNull(author, nameof(author));
+            
+            Author = author;
         }
 
         private void AddRssFeedDomainEvent(Author author)
