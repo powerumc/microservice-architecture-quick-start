@@ -57,7 +57,7 @@ namespace Powerumc.RssFeeds.Repositories
 
         public virtual async Task<TDatabaseModel> CreateAsync(TDatabaseModel model)
         {
-            using (var dbContext = _dbContextFactory.CreateRead())
+            using (var dbContext = _dbContextFactory.CreateWrite())
             {
                 var entity = dbContext.Set<TDatabaseModel>().Add(model);
                 await dbContext.SaveChangesAsync();
@@ -68,7 +68,7 @@ namespace Powerumc.RssFeeds.Repositories
 
         public virtual async Task<TDatabaseModel> UpdateAsync(TDatabaseModel model)
         {
-            using (var dbContext = _dbContextFactory.CreateRead())
+            using (var dbContext = _dbContextFactory.CreateWrite())
             {
                 var entity = dbContext.Set<TDatabaseModel>().Update(model);
                 await dbContext.SaveChangesAsync();
@@ -79,7 +79,7 @@ namespace Powerumc.RssFeeds.Repositories
 
         public virtual async Task RemoveAsync(TDatabaseModel model)
         {
-            using (var dbContext = _dbContextFactory.CreateRead())
+            using (var dbContext = _dbContextFactory.CreateWrite())
             {
                 var entity = dbContext.Set<TDatabaseModel>().Remove(model);
                 await dbContext.SaveChangesAsync();
