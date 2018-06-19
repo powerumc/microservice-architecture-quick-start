@@ -2,6 +2,7 @@
 {
     public interface IRssFeedsDbContextFactory
     {
-        RssFeedsDbContext Create();
+        RssFeedsDbContext CreateRead();
+        RssFeedsDbContext CreateWrite();
     }
 }

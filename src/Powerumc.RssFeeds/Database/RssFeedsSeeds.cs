@@ -8,7 +8,7 @@ namespace Powerumc.RssFeeds.Database
     {
         public static void Seed(this IRssFeedsDbContextFactory dbContextFactory)
         {
-            using (var dbContext = dbContextFactory.Create())
+            using (var dbContext = dbContextFactory.CreateWrite())
             {
                 dbContext.Database.EnsureCreated();
 
