@@ -1,4 +1,6 @@
-﻿namespace Powerumc.RssFeeds.Database
+﻿using Microsoft.EntityFrameworkCore.Infrastructure;
+
+namespace Powerumc.RssFeeds.Database
 {
     public interface IRssFeedsDbContextFactory
     {
