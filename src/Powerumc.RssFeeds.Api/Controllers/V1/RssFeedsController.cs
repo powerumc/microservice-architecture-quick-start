@@ -10,6 +10,7 @@ using Powerumc.RssFeeds.Services;
 
 namespace Powerumc.RssFeeds.Api.Controllers.V1
 {
+    [ApiController]
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/rssfeeds")]
     public class RssFeedsController : ApiController

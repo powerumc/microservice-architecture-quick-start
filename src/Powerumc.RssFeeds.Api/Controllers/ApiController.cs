@@ -5,7 +5,7 @@ using Powerumc.RssFeeds.Domain.Responses;
 
 namespace Powerumc.RssFeeds.Api.Controllers
 {
-    public class ApiController : Controller
+    public class ApiController : ControllerBase
     {
         [NonAction]
         public IActionResult Error(TraceId traceId)
