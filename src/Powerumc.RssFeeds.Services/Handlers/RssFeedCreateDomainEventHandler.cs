@@ -9,7 +9,6 @@ using Powerumc.RssFeeds.Repositories;
 
 namespace Powerumc.RssFeeds.Services.Handlers
 {
-    [Register(typeof(IDomainEventHandler<RssFeedCreateDomainEvent>))]
     public class RssFeedCreateDomainEventHandler : IDomainEventHandler<RssFeedCreateDomainEvent>
     {
         private readonly TraceId _traceId;
