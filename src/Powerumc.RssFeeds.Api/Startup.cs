@@ -64,7 +64,6 @@ namespace Powerumc.RssFeeds.Api
             app.UseRssFeedsConfigurationsOptions();
             feedsDbContextFactory.Seed();
             
-            app.UseHttpsRedirection();
             app.UseMvc();
         }
     }

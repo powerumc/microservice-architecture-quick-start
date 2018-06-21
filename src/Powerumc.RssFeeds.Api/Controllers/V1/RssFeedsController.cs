@@ -35,6 +35,8 @@ namespace Powerumc.RssFeeds.Api.Controllers.V1
         {
             try
             {
+                _logger.Log(_traceId, request.ToJson());
+                
                 await _rssFeedsService.CreateAsync(request);
                 return Ok();
             }
