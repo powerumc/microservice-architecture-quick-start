@@ -54,14 +54,6 @@ namespace Powerumc.RssFeeds.Services
             Guard.ThrowIfNullOrWhitespace(request.Title, nameof(request.Title));
             Guard.ThrowIfNullOrWhitespace(request.Url, nameof(request.Url));
             
-//            var entity = await _repository.CreateAsync(new RssFeed
-//            {
-//                Title = request.Title,
-//                Url = request.Url,
-//                CreateDate = DateTime.UtcNow,
-//                ModifyDate = DateTime.UtcNow
-//            });
-            
             _eventBus.Publish(new RssFeedCreateDomainEvent(new Author(request.Title, request.Url)));
 
             await Task.CompletedTask;
