@@ -47,8 +47,7 @@ namespace Powerumc.RssFeeds.Services
             });
         }
 
-        public async Task CreateAsync(
-            Domain.Requests.V1.RssFeedCreateRequest request)
+        public async Task CreateAsync(Domain.Requests.V1.RssFeedCreateRequest request)
         {
             Guard.ThrowIfNull(request, nameof(request));
             Guard.ThrowIfNullOrWhitespace(request.Title, nameof(request.Title));
