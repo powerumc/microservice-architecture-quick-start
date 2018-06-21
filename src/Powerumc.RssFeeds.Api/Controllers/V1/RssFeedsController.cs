@@ -35,7 +35,8 @@ namespace Powerumc.RssFeeds.Api.Controllers.V1
         {
             try
             {
-                return Ok(await _rssFeedsService.CreateAsync(request));
+                await _rssFeedsService.CreateAsync(request);
+                return Ok();
             }
             catch (Exception e)
             {

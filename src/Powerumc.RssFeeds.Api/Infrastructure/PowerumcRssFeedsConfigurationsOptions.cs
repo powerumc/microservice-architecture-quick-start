@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
 using Powerumc.RssFeeds.Api.Infrastructure.Extensions;
 using Powerumc.RssFeeds.Database;
+using Powerumc.RssFeeds.Events;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Powerumc.RssFeeds.Api.Infrastructure
@@ -95,11 +96,16 @@ namespace Powerumc.RssFeeds.Api.Infrastructure
             return this;
         }
 
-        public PowerumcRssFeedsConfigurationsOptions RegistComponents()
+        public PowerumcRssFeedsConfigurationsOptions AddRegistComponents()
         {
             _serviceCollection.AddRegistComponents();
 
             return this;
+        }
+
+        public void AddRegistDomainEventHandlers()
+        {
+            _serviceCollection.AddRegistDomainEventHandlers();
         }
     }
 }

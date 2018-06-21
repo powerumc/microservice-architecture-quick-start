@@ -20,5 +20,5 @@ Domain Driven Development
 - [x] Aggregate Root
 - [x] ValueObject
 - [x] CQRS
-- [ ] Event Sourcing
+- [x] Event Sourcing
 - [ ] Unit Of Work

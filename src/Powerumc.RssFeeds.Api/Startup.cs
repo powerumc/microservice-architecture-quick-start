@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Powerumc.RssFeeds.Api.Infrastructure.Extensions;
 using Powerumc.RssFeeds.Database;
+using Powerumc.RssFeeds.Services.Handlers;
 
 namespace Powerumc.RssFeeds.Api
 {
@@ -44,7 +45,8 @@ namespace Powerumc.RssFeeds.Api
                     .AddCors()
                     .AddSwagger()
                     .AddTraceId()
-                    .RegistComponents();
+                    .AddRegistComponents()
+                    .AddRegistDomainEventHandlers();
             });
         }
 
@@ -58,7 +60,7 @@ namespace Powerumc.RssFeeds.Api
             {
                 app.UseHsts();
             }
-
+            
             app.UseRssFeedsConfigurationsOptions();
             feedsDbContextFactory.Seed();
             

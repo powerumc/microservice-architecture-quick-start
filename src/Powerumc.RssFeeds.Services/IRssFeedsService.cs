@@ -14,6 +14,6 @@ namespace Powerumc.RssFeeds.Services
         Task<PagingResult<IEnumerable<Domain.Responses.V1.RssFeedResponse>>> ListAsync(
             Expression<Func<Database.Models.RssFeed, bool>> expression, PagingInfo pagingInfo);
 
-        Task<Domain.Responses.V1.RssFeedResponse> CreateAsync(RssFeedCreateRequest request);
+        Task CreateAsync(RssFeedCreateRequest request);
     }
 }

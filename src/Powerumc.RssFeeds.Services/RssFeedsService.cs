@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Powerumc.RssFeeds.Database.Models;
 using Powerumc.RssFeeds.Domain;
+using Powerumc.RssFeeds.Domain.Events;
 using Powerumc.RssFeeds.Domain.Models;
 using Powerumc.RssFeeds.Domain.Responses.V1;
+using Powerumc.RssFeeds.Events;
 using Powerumc.RssFeeds.Repositories;
 using Powerumc.RssFeeds.Services.Handlers;
 using Powerumc.RssFeeds.ValueObjects;
@@ -20,14 +22,17 @@ namespace Powerumc.RssFeeds.Services
         private readonly TraceId _traceId;
         private readonly ILogger<RssFeedsService> _logger;
         private readonly IRssFeedsRepository _repository;
+        private readonly IEventBus _eventBus;
 
         public RssFeedsService(TraceId traceId,
             ILogger<RssFeedsService> logger,
-            IRssFeedsRepository repository)
+            IRssFeedsRepository repository,
+            IEventBus eventBus)
         {
             _traceId = traceId;
             _logger = logger;
             _repository = repository;
+            _eventBus = eventBus;
         }
 
         public async Task<PagingResult<IEnumerable<Domain.Responses.V1.RssFeedResponse>>> ListAsync(
@@ -42,24 +47,24 @@ namespace Powerumc.RssFeeds.Services
             });
         }
 
-        public async Task<Domain.Responses.V1.RssFeedResponse> CreateAsync(
+        public async Task CreateAsync(
             Domain.Requests.V1.RssFeedCreateRequest request)
         {
             Guard.ThrowIfNull(request, nameof(request));
             Guard.ThrowIfNullOrWhitespace(request.Title, nameof(request.Title));
             Guard.ThrowIfNullOrWhitespace(request.Url, nameof(request.Url));
             
-            var entity = await _repository.CreateAsync(new RssFeed
-            {
-                Title = request.Title,
-                Url = request.Url,
-                CreateDate = DateTime.UtcNow,
-                ModifyDate = DateTime.UtcNow
-            });
+//            var entity = await _repository.CreateAsync(new RssFeed
+//            {
+//                Title = request.Title,
+//                Url = request.Url,
+//                CreateDate = DateTime.UtcNow,
+//                ModifyDate = DateTime.UtcNow
+//            });
+            
+            _eventBus.Publish(new RssFeedCreateDomainEvent(new Author(request.Title, request.Url)));
 
-            var result = await _repository.GetAsync(entity.Id);
-
-            return await Task.FromResult(ConvertFrom(result));
+            await Task.CompletedTask;
         }
 
         private static Domain.Responses.V1.RssFeedResponse ConvertFrom(Database.Models.RssFeed model)
