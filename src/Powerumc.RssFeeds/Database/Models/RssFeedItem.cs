@@ -1,13 +1,11 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Powerumc.RssFeeds.Domain;
 
 namespace Powerumc.RssFeeds.Database.Models
 {
-    public class RssFeedItem
+    public class RssFeedItem : Entity
     {
-        [Key]
-        public long Id { get; set; }
-        
         [Required]
         [StringLength(255)]
         public string Title { get; set; }

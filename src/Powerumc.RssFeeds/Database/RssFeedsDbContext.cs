@@ -14,12 +14,12 @@ namespace Powerumc.RssFeeds.Database
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<RssFeed>()
-                .HasIndex(o => o.Url)
-                .IsUnique();
+                .HasQueryFilter(o => !o.IsDeleted)
+                .HasIndex(o => new {o.Url, o.IsDeleted});
 
             modelBuilder.Entity<RssFeedItem>()
-                .HasIndex(o => o.Url)
-                .IsUnique();
+                .HasQueryFilter(o => !o.IsDeleted)
+                .HasIndex(o => new {o.Url, o.IsDeleted});
         }
     }
 }
