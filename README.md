@@ -7,7 +7,7 @@ C# 언어와 ASP.NET Core 환경을 이용하여 마이크로서비스 시스템
 
 ## Infrastructure
 - [x] NLog
-- [x] Swagger 통합
+- [x] Swagger Integration
 - [x] Entity Framework Core DbContext
 - [x] TraceId about Request
 - [ ] Exception Handling
@@ -15,6 +15,7 @@ C# 언어와 ASP.NET Core 환경을 이용하여 마이크로서비스 시스템
 - [ ] AutoMapper
 - [x] Data Protection
 - [x] Polly
+- [ ] Health Check
 
 Domain Driven Development
 - [x] Aggregate Root
