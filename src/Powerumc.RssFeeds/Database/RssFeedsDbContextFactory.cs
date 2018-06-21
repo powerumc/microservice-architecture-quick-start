@@ -8,29 +8,28 @@ namespace Powerumc.RssFeeds.Database
 {
     public class RssFeedsDbContextFactory : IRssFeedsDbContextFactory
     {
-        private DbContextOptions _readDbContextOptions;
-        private DbContextOptions _writeDbContextOptions;
+        private DbContextOptions _dbContextOptions;
 
         public RssFeedsDbContext CreateRead()
         {
-            if (_readDbContextOptions != null) return new RssFeedsDbContext(_readDbContextOptions);
+            if (_dbContextOptions != null) return new RssFeedsDbContext(_dbContextOptions);
 
             var optionsBuilder = CreateOptionBuilder("rssfeeds-db");
 
-            _readDbContextOptions = optionsBuilder.Options;
+            _dbContextOptions = optionsBuilder.Options;
 
-            return new RssFeedsDbContext(_readDbContextOptions);
+            return new RssFeedsDbContext(_dbContextOptions);
         }
 
         public RssFeedsDbContext CreateWrite()
         {
-            if (_writeDbContextOptions != null) return new RssFeedsDbContext(_writeDbContextOptions);
+            if (_dbContextOptions != null) return new RssFeedsDbContext(_dbContextOptions);
 
             var optionsBuilder = CreateOptionBuilder("rssfeeds-db");
 
-            _writeDbContextOptions = optionsBuilder.Options;
+            _dbContextOptions = optionsBuilder.Options;
 
-            return new RssFeedsDbContext(_writeDbContextOptions);
+            return new RssFeedsDbContext(_dbContextOptions);
         }
         
         private static DbContextOptionsBuilder CreateOptionBuilder(string dbName)
