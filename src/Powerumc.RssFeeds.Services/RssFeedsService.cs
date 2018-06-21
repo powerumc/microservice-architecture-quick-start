@@ -10,6 +10,7 @@ using Powerumc.RssFeeds.Domain.Events;
 using Powerumc.RssFeeds.Domain.Models;
 using Powerumc.RssFeeds.Domain.Responses.V1;
 using Powerumc.RssFeeds.Events;
+using Powerumc.RssFeeds.Extensions;
 using Powerumc.RssFeeds.Repositories;
 using Powerumc.RssFeeds.Services.Handlers;
 using Powerumc.RssFeeds.ValueObjects;
@@ -52,6 +53,8 @@ namespace Powerumc.RssFeeds.Services
             Guard.ThrowIfNull(request, nameof(request));
             Guard.ThrowIfNullOrWhitespace(request.Title, nameof(request.Title));
             Guard.ThrowIfNullOrWhitespace(request.Url, nameof(request.Url));
+            
+            _logger.Log(_traceId, request.ToJson());
             
             _eventBus.Publish(new RssFeedCreateDomainEvent(new Author(request.Title, request.Url)));
 

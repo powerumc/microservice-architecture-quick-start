@@ -34,9 +34,7 @@ namespace Powerumc.RssFeeds.Api.Controllers.V1
         public async Task<IActionResult> CreateAsync([FromBody] Domain.Requests.V1.RssFeedCreateRequest request)
         {
             try
-            {
-                _logger.Log(_traceId, request.ToJson());
-                
+            {                
                 await _rssFeedsService.CreateAsync(request);
                 return Ok();
             }
