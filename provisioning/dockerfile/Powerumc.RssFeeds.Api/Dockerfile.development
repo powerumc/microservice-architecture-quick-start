@@ -4,6 +4,8 @@ FROM microsoft/dotnet:2.1.301-sdk as base
 ENV Name=Powerumc.RssFeeds.Api
 ENV ProvisioningDir=./provisioning/dockerfile/${Name}
 ENV BuildDir=/src/${Name}
+ENV ASPNETCORE_ENVIRONMENT Development
+ENV ASPNETCORE_URLS http://localhost:5000
 
 EXPOSE 80
 
@@ -32,11 +34,11 @@ FROM build as publish
 ENV Name=Powerumc.RssFeeds.Api
 ENV BuildDir=/src/${Name}
 WORKDIR ${BuildDir}
-RUN dotnet publish --no-restore -o /app
+RUN dotnet publish --no-restore -o /app/out
 
 
 FROM base as final
-WORKDIR /app
-COPY --from=publish /app .
-RUN ls -al
-CMD service nginx restart && dotnet /app/${Name}.dll
+COPY --from=publish /app/out /app/out
+COPY --from=publish /src/DataProtection-Keys /app/DataProtection-Keys
+WORKDIR /app/out
+CMD service nginx restart && dotnet /app/out/${Name}.dll
