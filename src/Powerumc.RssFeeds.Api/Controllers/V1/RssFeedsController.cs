@@ -18,14 +18,17 @@ namespace Powerumc.RssFeeds.Api.Controllers.V1
         private readonly TraceId _traceId;
         private readonly ILogger<RssFeedsController> _logger;
         private readonly IRssFeedsService _rssFeedsService;
+        private readonly IRssFeedsHttpService _rssFeedsHttpService;
 
         public RssFeedsController(TraceId traceId,
             ILogger<RssFeedsController> logger,
-            IRssFeedsService rssFeedsService)
+            IRssFeedsService rssFeedsService,
+            IRssFeedsHttpService rssFeedsHttpService)
         {
             _traceId = traceId;
             _logger = logger;
             _rssFeedsService = rssFeedsService;
+            _rssFeedsHttpService = rssFeedsHttpService;
         }
 
         [HttpPost]
@@ -53,6 +56,20 @@ namespace Powerumc.RssFeeds.Api.Controllers.V1
             try
             {
                 return Ok(await _rssFeedsService.ListAsync(null, request));
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(_traceId, e);
+                return Error(_traceId);
+            }
+        }
+
+        [HttpGet("feeds")]
+        public async Task<IActionResult> ListFeedsItemsAsync()
+        {
+            try
+            {
+                return Ok(await _rssFeedsHttpService.AllItemsAsync());
             }
             catch (Exception e)
             {

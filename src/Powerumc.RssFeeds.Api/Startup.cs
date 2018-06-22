@@ -36,7 +36,8 @@ namespace Powerumc.RssFeeds.Api
                 .AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddApiVersioning();
+            services.AddApiVersioning()
+                .AddHttpClient();
 
             services.AddRssFeedsConfigurations(_env, options =>
             {
