@@ -6,7 +6,7 @@ C# 언어와 ASP.NET Core 환경을 이용하여 마이크로서비스 시스템
 1. In-Memory Database 사용함
 
 ## Infrastructure
-- [ ] Ocelot (Api Gateway)
+- [ ] [Ocelot](https://github.com/ThreeMammals/Ocelot) (Api Gateway)
 - [x] NLog
 - [x] Swagger Integration
 - [x] Entity Framework Core DbContext
