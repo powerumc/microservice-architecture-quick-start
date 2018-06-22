@@ -20,6 +20,7 @@ namespace Powerumc.RssFeeds.Api
     public class Startup
     {
         private readonly IHostingEnvironment _env;
+        
         public IConfiguration Configuration { get; }
 
         public Startup(IConfiguration configuration,

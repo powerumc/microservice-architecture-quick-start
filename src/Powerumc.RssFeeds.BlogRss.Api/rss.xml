@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>&quot;엄준일&quot;과 함께하는 소프트웨어를 위한 플랫폼 이야기</title>
+        <link>http://blog.powerumc.kr/</link>
+        <description>소프트웨어를 위한 개발, 테스팅, 통합, 프로세스, 플랫폼의 경험과 새로운 기술을 소개하는 블로그입니다.</description>
+        <language>ko</language>
+        <pubDate>Fri, 22 Jun 2018 20:50:31 +0900</pubDate>
+        <generator>TISTORY</generator>
+        <managingEditor>POWERUMC</managingEditor>
+        <image>
+            <title>&quot;엄준일&quot;과 함께하는 소프트웨어를 위한 플랫폼 이야기</title>
+            <url>http://cfile5.uf.tistory.com/image/2310C63B579ABB10010524</url>
+            <link>http://blog.powerumc.kr</link>
+            <description>소프트웨어를 위한 개발, 테스팅, 통합, 프로세스, 플랫폼의 경험과 새로운 기술을 소개하는 블로그입니다.</description>
+        </image>
+        <item>
+            <title>[VSGesture] VSGesture for Visual Studio 2017 배포 완료</title>
+            <link>http://blog.powerumc.kr/499</link>
+            <description>VSGesture for Visual Studio 2017 배포 완료 Visual Studio 2017 버전 배포 완료 Visual Studio 2017의 Tools -&gt; Extension Manager 에서 다운로드 받으실 수 있습니다. (검색: vsgesture) Visual Studio 2017 버전 https://marketplace.visualstudio.com/items?itemName=vs-publisher-2521.VSGesturefo..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/499&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>VSGesture</category>
+            <category>extension</category>
+            <category>Visual Studio</category>
+            <category>VSGesture</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/499</guid>
+            <comments>http://blog.powerumc.kr/499#entry499comment</comments>
+            <pubDate>Wed, 05 Apr 2017 18:29:34 +0900</pubDate>
+        </item>
+        <item>
+            <title>Language Server Protocol, OmniSharp-Roslyn 빌드 오류 해결</title>
+            <link>http://blog.powerumc.kr/498</link>
+            <description>마이크로소프트(Microsoft)는 VSCode 에서 다양한 개발 편의 기능을 제공하기 위한 Language Server Protocol 을 공개했다. 이 프로토콜의 C# 버전이 바로 OmniSharp-Roslyn이 되겠다. 그 외에 다양한 언어의 구현체가 등장했는데, 어떤 개발 언어가 구현 되었는지 아래의 링크에서 확인하기 바란다. https://github.com/Microsoft/language-server-protocol/wiki/Protoc..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/498&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>C#</category>
+            <category>c#</category>
+            <category>OmniSharo</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/498</guid>
+            <comments>http://blog.powerumc.kr/498#entry498comment</comments>
+            <pubDate>Mon, 23 Jan 2017 19:59:19 +0900</pubDate>
+        </item>
+        <item>
+            <title>TypeScript 언어 핵심 요약 사항</title>
+            <link>http://blog.powerumc.kr/497</link>
+            <description>TypeScript 언어 핵심 요약 사항 TypeScript 핵심 요약은 ES6 에 추가된 기능과 중복된 항목이 있다. TypeScript 는 Javascript 의 슈퍼셋(Superset)이라고 하지만, 아직 ES6 를 완벽하게 지원하지 않는다. 그래서 본 글의 핵심 요약은 TypeScript 에서 추가된 기능이자 ES6 와 중복된 내용이 있다. ES6 의 새로운 기능은 다음의 링크에서 참고하기 바란다. http://es6-features.org/..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/497&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>Javascript</category>
+            <category>es5</category>
+            <category>ES6</category>
+            <category>Javascript</category>
+            <category>TypeScript</category>
+            <category>자바스크립트</category>
+            <category>타입스크립트</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/497</guid>
+            <comments>http://blog.powerumc.kr/497#entry497comment</comments>
+            <pubDate>Tue, 17 Jan 2017 21:47:59 +0900</pubDate>
+        </item>
+        <item>
+            <title>[ASP.NET Core] Middleware, IHttpModule과 IHttpHandler 마이그레이션</title>
+            <link>http://blog.powerumc.kr/496</link>
+            <description>ASP.NET Core Middleware ASP.NET Core Middleware 는 모든 요청과 응답을 처리하는 파이프라인이다. 레거시 ASP.NET 과 ASP.NET MVC 에서는 이를 IHttpModule 과 IHttpHandler 를 통해 구현하여 처리하거나, Global.asax.cs 에서 처리 가능하다. IHttpModule 이 주로 사용되는 경우는 권한 처리 등과 같이 다양하게 사용된다. 모든 요청은 이 IHttpModule 을 파이..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/496&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>ASP.NET</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/496</guid>
+            <comments>http://blog.powerumc.kr/496#entry496comment</comments>
+            <pubDate>Wed, 16 Nov 2016 09:38:02 +0900</pubDate>
+        </item>
+        <item>
+            <title>[ASP.NET Core] IControllerFactory 설정 및 마이그레이션</title>
+            <link>http://blog.powerumc.kr/495</link>
+            <description>IControllerFactory IControllerFactory 는 컨트롤러 객체를 반환하거나 객체 릴리즈 시키는 팩토리 인터페이스이다. ASP.NET MVC 4 까지 지원하지 않았던 DI(Dependency Injection) 기능을 사용하기 위해 이 인터페이스를 구현하여 사용하였다. ASP.NET Core 에서는 객체 주입(Injection) 할 때 한 가지 큰 단점이 있다. 생성자 주입(Constructor Injection) 으로만 DI(..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/495&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>ASP.NET</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/495</guid>
+            <comments>http://blog.powerumc.kr/495#entry495comment</comments>
+            <pubDate>Tue, 15 Nov 2016 12:06:33 +0900</pubDate>
+        </item>
+        <item>
+            <title>[ASP.NET] Session state has created a session id, but cannot save it because the response was already flushed</title>
+            <link>http://blog.powerumc.kr/494</link>
+            <description>오류 유형은 아래의 웹서버 로그와 같이 “세션ID 가 생성 되었지만, Response 가 Flushed 되어 저장할 수 없다”. Session state has created a session id, but cannot save it because the response was already flushed 이 현상은 다음의 경우의 수를 모두 만족할 경우 발생하게 된다. 웹서버(IIS) 가 리사이클링 되고, 웹서버에게 첫 요청이 가고, 코드에서 Ses..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/494&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>ASP.NET</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/494</guid>
+            <comments>http://blog.powerumc.kr/494#entry494comment</comments>
+            <pubDate>Tue, 09 Aug 2016 11:00:09 +0900</pubDate>
+        </item>
+        <item>
+            <title>[onhashchange] hash 를 감지하는 onhashchange.js Polyfill 라이브러리</title>
+            <link>http://blog.powerumc.kr/493</link>
+            <description>onhashchange onhashchange.js 를 방금 릴리즈 했습니다. https://github.com/powerumc/onhashchange onhashchange 기능이 제공되는지 여부를 감지하고, 이를 지원하지 않는 오래된 브라우저인 경우 Polyfill 을 지원합니다. 아래의 호환 브라우저 미만인 경우 onhashchange Polyfill 이 동작하게 됩니다. Implemented event fields. The dispatched..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/493&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>onhashchange</category>
+            <category>hash</category>
+            <category>onhashchange</category>
+            <category>polyfill</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/493</guid>
+            <comments>http://blog.powerumc.kr/493#entry493comment</comments>
+            <pubDate>Fri, 13 May 2016 16:18:41 +0900</pubDate>
+        </item>
+        <item>
+            <title>[MyRedis] Redis 에서 데이터베이스 연결 지원</title>
+            <link>http://blog.powerumc.kr/491</link>
+            <description> [GitHub] https://github.com/powerumc/MyRedis MyRedis 는 MySQL 연결을 지원하도록 2014년도에 개선 된 프로젝트이다. RedisPlus 와 함께 곁들어 Redis와 DB 간에 동기화 할 때 사용할 때, 웹서버에서 처리해야 할 것들을 Redis 안에서 모두 해결하기 위함이다. 따라서 필요 이상의 라운드 트립 발생을 줄일 수 있다. 1. Setup Database Setup Database &gt; SET db..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/491&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>MyRedis</category>
+            <category>Database</category>
+            <category>db</category>
+            <category>myredis</category>
+            <category>mysql</category>
+            <category>Redis</category>
+            <category>레디스</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/491</guid>
+            <comments>http://blog.powerumc.kr/491#entry491comment</comments>
+            <pubDate>Tue, 05 Apr 2016 14:52:06 +0900</pubDate>
+        </item>
+        <item>
+            <title>[RedisPlus] Redis 에서 키 만료 이벤트 개선 작업</title>
+            <link>http://blog.powerumc.kr/490</link>
+            <description> 2014년 TFT 프로젝트에서 Redis 이벤트와 관련하여 기능이 필요하여 개발된 프로젝트이다. [Github] https://github.com/powerumc/RedisPlus RedisPlus 를 개발하게 된 계기는 Redis 이벤트의 Key Expired 이벤트 외에 Key Expiring 이벤트가 필요했는데, **Key Expiring **이벤트는 Redis Key 가 만료가 되었을 때, 만료전에 발생하는 이벤트이고, Key Expired..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/490&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>RedisPlus</category>
+            <category>cache</category>
+            <category>Redis</category>
+            <category>RedisPlus</category>
+            <category>레디스</category>
+            <category>캐시</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/490</guid>
+            <comments>http://blog.powerumc.kr/490#entry490comment</comments>
+            <pubDate>Tue, 05 Apr 2016 13:48:28 +0900</pubDate>
+        </item>
+        <item>
+            <title>ASP.NET WebForm 에서 Dependency Injection 사용하는 방법</title>
+            <link>http://blog.powerumc.kr/486</link>
+            <description>개요 ASP.NET WebForm 에서 Dependency Injection 을 사용하는 방법을 소개한다. IoC Container 를 이용하여 System.Web.UI.Page 를 상속하는 페이지에서 Injection 을 해야 하는데, 이를 위해 IHttpHandlerFactory 를 사용하는 방법을 소개한다. 여기에서는 필자가 꾸준히 만들어 온 Unity Container 와 Windsor Castle 을 기반으로 하는 Umc.Core 프레임워크..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/486&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>ASP.NET</category>
+            <category>ASP.NET</category>
+            <category>Dependency Injection</category>
+            <category>IOC</category>
+            <category>WebForm</category>
+            <category>웹폼</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/486</guid>
+            <comments>http://blog.powerumc.kr/486#entry486comment</comments>
+            <pubDate>Sun, 28 Feb 2016 12:08:02 +0900</pubDate>
+        </item>
+        <item>
+            <title>데이터를 표로 표현해주는 Flip-Tables-Net</title>
+            <link>http://blog.powerumc.kr/485</link>
+            <description>Flip-Table-Net 은 자바 코드로 작성된 flip-table 을.NET 코드로 포팅한 프로젝트로, 콘솔에 데이터를 표로 표현해 줍니다.  설치 Command Line 에서 다음처럼 입력하거나, nuget install flip-tables-net Visual Studio Package Manager Console 에서 다음처럼 입력합니다.. Install-Package Flip-Tables-Net 또는 Nuget 패키지 관리자에서 flip-..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/485&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>Umc Projects</category>
+            <category>flip-tables-net</category>
+            <category>github</category>
+            <category>Open Source</category>
+            <category>POWERUMC</category>
+            <category>엄준일</category>
+            <category>오픈소스</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/485</guid>
+            <comments>http://blog.powerumc.kr/485#entry485comment</comments>
+            <pubDate>Sat, 20 Feb 2016 18:07:15 +0900</pubDate>
+        </item>
+        <item>
+            <title>[MonoDevelop] 두 번째 한글화 버전 승인완료</title>
+            <link>http://blog.powerumc.kr/484</link>
+            <description>최근 MonoDevelop 개발툴의 한글화를 좀 더 고도화(?)하여 Pull Request 를 보냈다. 하루가 지나고 바로 approve 되어 차기 릴리즈 버전에 바로 적용이 가능하리라 생각한다. 또한, Xamarin Studio 에도 더 부드러운 한글화를 만나볼 수 있게 되었다. 필자가 개별적으로 배포하는 곳은 monodevelop.co.kr 에서 받아볼 수 있다. 1차 번역은 오로지 한글화에 목표를 두었다면, 2차 번역은 잘못된 번역과 좀 더 부..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/484&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>Mono</category>
+            <category>.NET</category>
+            <category>c#</category>
+            <category>IDE</category>
+            <category>mono</category>
+            <category>monodevelop</category>
+            <category>개발툴</category>
+            <category>엄준일</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/484</guid>
+            <comments>http://blog.powerumc.kr/484#entry484comment</comments>
+            <pubDate>Thu, 28 Jan 2016 23:10:41 +0900</pubDate>
+        </item>
+        <item>
+            <title>[MIPS] beq 를 안쓰고 bne 를 쓰는 이유는 무엇인가요?</title>
+            <link>http://blog.powerumc.kr/483</link>
+            <description>얼마 전에 페이스북에 올라온 질문인데, “MIPS 어셈블리 코드 중 beq 를 안쓰고 bne 를 쓰는 이유는 무엇인가요?” 라는 질문이다.  아래와 같은 C 언어 코드가 있고, if (i == j) f = g + h; else f = g - h; 이를 순서도로 나타내면 다음과 같다.  컴파일러와 최적화 옵션에 따라 생성되는 어셈블리 인스트럭션이 아래와 똑같다고 말할 수 없다. 일반적으로 컴파일러는 인스트럭션을 생성할 때 조건문의 경우 반대 조건으로 ..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/483&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>C++</category>
+            <category>assembly</category>
+            <category>beq</category>
+            <category>bne</category>
+            <category>instructions</category>
+            <category>MIPS</category>
+            <category>어셈블리</category>
+            <category>인스트럭션</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/483</guid>
+            <comments>http://blog.powerumc.kr/483#entry483comment</comments>
+            <pubDate>Tue, 12 May 2015 04:12:25 +0900</pubDate>
+        </item>
+        <item>
+            <title>[Swift] Xcode 6.3, Swift 1.2 업그레이드 시 언어 사양이 변경된 부분 정리</title>
+            <link>http://blog.powerumc.kr/482</link>
+            <description>얼마 전 Swift 1.2 버전으로 업그레이드를 실시했다. 뭐, 자의에 의해서 한 것은 아니고, Xcode 6.3.1 버전으로 업데이트 하니 자연스럽게 Swift 언어 버전도 업데이트 된 것! 다음은 Swift 1.2 로 업데이트하면서 나에게 발생한 오류를 정리해 본다.  1. NSString 과 String 타입 캐스팅(형변환)은 명시적으로 하도록 변경 이렇게 동작하던 코드는 더 이상 암시적으로 캐스팅을 하면 안된다. func print(strin..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/482&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>C++</category>
+            <category>Inter-Translate</category>
+            <category>Language</category>
+            <category>swift</category>
+            <category>xcode</category>
+            <category>스위프트</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/482</guid>
+            <comments>http://blog.powerumc.kr/482#entry482comment</comments>
+            <pubDate>Thu, 23 Apr 2015 17:44:45 +0900</pubDate>
+        </item>
+        <item>
+            <title>[MonoDevelop Korean] 최신 빌드 오류 정보</title>
+            <link>http://blog.powerumc.kr/481</link>
+            <description>Xamarin사에서 MonoDevelop 오픈 소스 재단을 인수하면서 너무 돈을 밝히는 게 아닌가 싶을 정도로 상업적인 기업으로 변했다. M$(Microsoft)와 긴밀하게 관계가 유지되면서 돈 버는 방법도 너무 M$와 비슷해져 비호감 기업 반열에 충분히 올라갈 것으로 기대한다. 그건 그렇고 필자가 진행하고 있는 MonoDevelop Korean 빌드에 오류가 발생했다. 물론 Xamarin사에 인수되기 전부터 한글화 작업을 진행했던 터라 이번 빌드 ..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/481&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>MonoDevelop Korean</category>
+            <category>build</category>
+            <category>IDE</category>
+            <category>monodevelop</category>
+            <category>MonoDevelop Korean</category>
+            <category>unity</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/481</guid>
+            <comments>http://blog.powerumc.kr/481#entry481comment</comments>
+            <pubDate>Thu, 16 Apr 2015 02:18:59 +0900</pubDate>
+        </item>
+        <item>
+            <title>[마감][베타 다운로드] 중간 번역 (Inter-Translate) 베타 버전 다운로드 공개</title>
+            <link>http://blog.powerumc.kr/480</link>
+            <description>[마감] 중간 번역 (Inter-Translate) 베타 버전 다운로드 공개 중간 번역(Inter-Translate) 앱이 탄생하게 된 계기는 다음과 같습니다. 구글에서 제공하는 번역기의 공개 API는 번역 문장의 길이에 제한이 있어 한글 문장 약 1,500자가 넘으면 번역이 되지 않고, 번역 횟수에도 제한이 있습니다. 이 두 가지의 문제를 해결하기 위해 우회적인 방법으로 제한 없이 매우 긴 문장도 번역할 수 있는 앱입니다. 사용자의 피드백을 받아 ..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/480&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>[Mac App] Inter Translate (중간 번역 앱)</category>
+            <category>App Store</category>
+            <category>Inter-Translate</category>
+            <category>Mac App</category>
+            <category>Translation</category>
+            <category>맥앱</category>
+            <category>번역</category>
+            <category>앱스토어</category>
+            <category>중간번역</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/480</guid>
+            <comments>http://blog.powerumc.kr/480#entry480comment</comments>
+            <pubDate>Tue, 24 Mar 2015 01:03:18 +0900</pubDate>
+        </item>
+        <item>
+            <title>[MonoDevelop] v5.7.2.2 한글 버전 배포 공지</title>
+            <link>http://blog.powerumc.kr/479</link>
+            <description>- MonoDevelop v5.7.2.2 한글 버전 빌드 업데이트 2013년부터 꾸준히 진행해 오던 MonoDevelop v5.7.2.2 한글 버전의 새로운 빌드를 업데이트 했습니다. MonoDevelop v5.7.2.2 한글 버전은 다음의 링크에서 다운로드 받을 수 있습니다. 다운로드 : http://monodevelop.co.kr  - 왜 MonoDevelop을 써야하나? 외국 Xamarin 기업에서 Mono 오픈소스 재단을 인수하면서 Mono ..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/479&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>Mono</category>
+            <category>deployment</category>
+            <category>GPL</category>
+            <category>LGPL2</category>
+            <category>MIT/X11</category>
+            <category>mono</category>
+            <category>monodevelop</category>
+            <category>POWERUMC</category>
+            <category>umc</category>
+            <category>배포</category>
+            <category>엄준일</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/479</guid>
+            <comments>http://blog.powerumc.kr/479#entry479comment</comments>
+            <pubDate>Wed, 25 Feb 2015 21:41:14 +0900</pubDate>
+        </item>
+        <item>
+            <title>[Mac App][일시무료] Inter-Translate (중간 번역 앱)</title>
+            <link>http://blog.powerumc.kr/478</link>
+            <description>Inter Translate (중간 번역 앱) - 현재 심사중 영문을 한글로 번역하는 것이 힘드시죠? 번역 품질을 더 매끄럽게 만들기 위해 Inter Translate (중간 번역) 앱을 이용해 보세요. 구글은 일본어에 대한 번역 데이터베이스가 더 풍부한 점을 이용하여, 번역할 문장을 일본어로 번역한 후 이를 다시 원하는 언어로 번역합니다. 일반적으로 한글을 직접 번역하는 것 보다 훨씬 품질이 좋습니다. 즉시 번역 예) 영어 -&gt; 한국어로 번역 중간..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/478&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>[Mac App] Inter Translate (중간 번역 앱)</category>
+            <category>English</category>
+            <category>Google</category>
+            <category>japanese</category>
+            <category>Korean</category>
+            <category>translate</category>
+            <category>구글</category>
+            <category>번역</category>
+            <category>영어</category>
+            <category>일본어</category>
+            <category>한국어</category>
+            <category>한글</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/478</guid>
+            <comments>http://blog.powerumc.kr/478#entry478comment</comments>
+            <pubDate>Sun, 04 Jan 2015 22:31:05 +0900</pubDate>
+        </item>
+        <item>
+            <title>[Github/Javascript-OOP-AOP-IoC] 자바스크립트 객체지향 프로그래밍 (github)</title>
+            <link>http://blog.powerumc.kr/477</link>
+            <description>Javascript-OOP-AOP-IoC / 자바스크립트 객체지향 프로그래밍  자바스크립트 객체지향 프로그램을 쉽게 하기 위한 소스 코드를 github 에 공개(https://github.com/powerumc/Javascript-OOP-AOP-IoC)했다. 자바스크립트로 객체지향 프로그래밍을 잘 하려면 배워야 하는 것들이 참 많다. 함수형 프로그래밍과 자바스크립트의 prototype 기반의 chain, 함수를 인스턴스로 사용하고, 객체지향적인 몇 ..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/477&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>JS-OOP</category>
+            <category>AOP</category>
+            <category>aspect orientied programming</category>
+            <category>control</category>
+            <category>github</category>
+            <category>inversion</category>
+            <category>Javascript</category>
+            <category>js</category>
+            <category>object</category>
+            <category>of</category>
+            <category>OOP</category>
+            <category>orientied</category>
+            <category>Programming</category>
+            <category>객체지향</category>
+            <category>깃헙</category>
+            <category>프로그래밍</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/477</guid>
+            <comments>http://blog.powerumc.kr/477#entry477comment</comments>
+            <pubDate>Sun, 16 Nov 2014 22:06:24 +0900</pubDate>
+        </item>
+        <item>
+            <title>[보안] Bash 원격코드실행 취약성 패치하기</title>
+            <link>http://blog.powerumc.kr/476</link>
+            <description> 오늘 팀 동료를 통해 bash 취약점이 있다는 내용을 들었고, cnet.com 링크를 통해 확인할 수 있다. bash 보안 취약성 패치하기 제가 배치한 버전은 bash 4.3.25 (이 버전의 패치 코드 25개) 이며, 이 버그는 원격 코드 실행 버그로 매우 위협적인 버그이다. 맥에서는 당시(2014–09–26) MacPort, Homebrew 에서 패치 버전을 제공하지 않는 관계로, 직접 소스 코드를 컴파일 하는 방법으로 해결하였다. 최신 bas..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/476&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>Linux</category>
+            <category>bash</category>
+            <category>Linux</category>
+            <category>Mac</category>
+            <category>Security</category>
+            <category>VUL</category>
+            <category>Vulnerability</category>
+            <category>리눅스</category>
+            <category>맥</category>
+            <category>보안</category>
+            <category>취양성</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/476</guid>
+            <comments>http://blog.powerumc.kr/476#entry476comment</comments>
+            <pubDate>Sun, 28 Sep 2014 22:13:58 +0900</pubDate>
+        </item>
+        <item>
+            <title>[Synergy] 여러 컴퓨터에서 키보드, 마우스 공유</title>
+            <link>http://blog.powerumc.kr/475</link>
+            <description>개요 윈도우 &lt;-&gt; 맥 &lt;-&gt; 리눅스 등 멀티 컴퓨터에서 마우스와 키보드를 공유할 수 있는 소프트웨어로 편하게 개발하기 Pair Programming 시에 키보드의 마우스를 주거니 받거니 할 필요 없이 각각 키보드와 마우스를 이용하여 개발하기 설치하기 1. 공식 홈페이지 http://synergy-project.org/ 2. 다운로드 링크 중요 : 현재 다운로드가 공식 홈페이시를 통해 불가능해 졌습니다. 따라서 아래의 링크를 통해 다운로드를 하시기 ..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/475&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>O/S</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/475</guid>
+            <comments>http://blog.powerumc.kr/475#entry475comment</comments>
+            <pubDate>Wed, 17 Sep 2014 08:52:39 +0900</pubDate>
+        </item>
+        <item>
+            <title>[Handlebars] Handlebars.java 버전의 with helper 버그 패치 커밋</title>
+            <link>http://blog.powerumc.kr/474</link>
+            <description> 회사에서 Handlebars.java 와 관련된 이슈가 공유가 되었다. Handlebars 가 Javascript 버전과 Java 버전의 #with helper 결과가 동일하지 않습니다. 우선 이 이슈 버그를 해결한 코드는 필자의 github 저장소 https://github.com/powerumc/handlebars.java.bug-fix 에 커밋 되어 있고, 원본 저장소의 이슈 번호 #314, Pull Request #315 에 등록 되었다. ..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/474&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>Java</category>
+            <category>Handlebars</category>
+            <category>Handlebars.java</category>
+            <category>java</category>
+            <category>Javascript</category>
+            <category>템플릿</category>
+            <category>핸들바</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/474</guid>
+            <comments>http://blog.powerumc.kr/474#entry474comment</comments>
+            <pubDate>Sun, 17 Aug 2014 23:18:13 +0900</pubDate>
+        </item>
+        <item>
+            <title>[Java] Java 8 Interface, default 메서드의 고찰</title>
+            <link>http://blog.powerumc.kr/473</link>
+            <description>얼마 전 자바8 람다 나머지 이야기를 보면서 평소 필자가 알던 Java와는 완전히 달라 보였다. 필자가 알고 있던 Java는 보수적이지만 정통적이라고 생각 해왔는데 과감히 이 생각을 깨졌다.  Java 8 Lambda 에 대해 궁금한 부분은 필자가 예전에 작성한 아티클을 참고하기 바란다. [Java] Java 8 의 Lambda(람다) 표현식에 대한 고찰 Java 8 Interface 변경 사항 default 키워드 오라클의 Defining an I..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/473&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>Java</category>
+            <category>default method</category>
+            <category>default 메서드</category>
+            <category>Interface</category>
+            <category>java</category>
+            <category>Java 8</category>
+            <category>JDK</category>
+            <category>JRE</category>
+            <category>lambda</category>
+            <category>람다</category>
+            <category>자바</category>
+            <category>자바8</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/473</guid>
+            <comments>http://blog.powerumc.kr/473#entry473comment</comments>
+            <pubDate>Wed, 06 Aug 2014 23:57:59 +0900</pubDate>
+        </item>
+        <item>
+            <title>[Markdown Toc] Markdown 콘텐트를 랜더링, 목차를 만들어 주는 소스 공개</title>
+            <link>http://blog.powerumc.kr/472</link>
+            <description>필자 만든 소스 코드가 GitHub에 올린 것들이 20여 가지가 넘어간다. 소스 코드도 중요 하지만 이것을 잘 설명하는 것도 무척 중요한 것 같다. 거기에 예쁘게 꾸밀 수 있다면 이건 신이 주신 능력임이 분명할 거다. ㅠ Markdown ToC (Table of Contents) 이런 어려움에 착안하여 Markdown ToC를 만들어 GitHub에 공개했다. 링크 : https://github.com/powerumc/markdown-toc Markd..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/472&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>Umc Projects</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/472</guid>
+            <comments>http://blog.powerumc.kr/472#entry472comment</comments>
+            <pubDate>Thu, 15 May 2014 22:40:42 +0900</pubDate>
+        </item>
+        <item>
+            <title>[MonoDevelop] MonoDevelop 한글 버전 프로젝트 오픈</title>
+            <link>http://blog.powerumc.kr/471</link>
+            <description>지난 2013년 7월부터 MonoDevelop 공식 프로젝트를 Fork 하여 MonoDevelop Korean 프로젝트를 진행 하였습니다. 그 결과 한 달을 매달려 약 4,500여 문장을 번역하였습니다. 그냥 번역 작업만 하면 쉽게 생각하겠지만, IDE 툴에서 보여주는 메시지를 영문으로 보여야 할지, 한글로 보여야 할지… 여러 문장이 합쳐지면 어색해 지지 않는지… 그리고 직역을 하게 되면 의미가 잘못 전달되지 않는지… 번역에 따른 크래시 버그…. 이..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/471&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>MonoDevelop Korean</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/471</guid>
+            <comments>http://blog.powerumc.kr/471#entry471comment</comments>
+            <pubDate>Mon, 12 May 2014 20:24:04 +0900</pubDate>
+        </item>
+        <item>
+            <title>[Redis] 새로 추가한 mysql 명령어로 db 연동</title>
+            <link>http://blog.powerumc.kr/469</link>
+            <description> 데이터베이스로 데이터를 조회하는 데, 성능을 꾀하기 위해 redis와 연동을 한다. 신규 기능에 적용하는 것은 어렵지 않을 것 같다. 하지만 기존 legacy 코드를 db에서 redis로 변경 한다면 새로운 전략이 필요할 것이다. 이런 경우가 얼마나 많겠냐마는 때때로 미션 크리티컬한 시스템 문제가 발생하면 한 번쯤 고려해 볼 만한 시나리오다. db에서 redis로 변경한다면 redis client 코드로 db 데이터를 조회하고 redis 데이터를 ..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/469&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>C++</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/469</guid>
+            <comments>http://blog.powerumc.kr/469#entry469comment</comments>
+            <pubDate>Mon, 21 Apr 2014 00:45:09 +0900</pubDate>
+        </item>
+        <item>
+            <title>[OpenSSL] 디버깅을 통해 알아보는 Heartbleed 취약성 버그</title>
+            <link>http://blog.powerumc.kr/468</link>
+            <description> 전 세계 인터넷은 OpenSSL의 중대한 버그로 난리다. 이 버그의 주요 요지는 특정 OpenSSL을 사용할 경우 메모리의 64KB를 획득할 수 있고, 이 버그로 서버 인증서의 비밀키(개인키)를 취득하여 서버로 오가는 모든 패킷을 취득할 수 있다. 라는 것인데, 이를 가리켜 Heartbleed(심장출혈) 버그라고 한다. 그 만큼 심각한 버그가 맞는데, 일각의 미디어에서 최악의 시나리오를 너무 일반화시키는 것이 아닌가 싶다. 필자가 보안 전문가는 아..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/468&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>C++</category>
+            <category>heartbeat</category>
+            <category>Heartbleed</category>
+            <category>HTTPS</category>
+            <category>OpenSSL</category>
+            <category>TLS</category>
+            <category>버그</category>
+            <category>보안</category>
+            <category>취약성</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/468</guid>
+            <comments>http://blog.powerumc.kr/468#entry468comment</comments>
+            <pubDate>Thu, 17 Apr 2014 01:05:43 +0900</pubDate>
+        </item>
+        <item>
+            <title>[Mac] DeskBoard 앱 할인 이벤트, 프레젠테이션을 위한 앱</title>
+            <link>http://blog.powerumc.kr/467</link>
+            <description> DeskBoard 앱은 프레젠테이션 등으로 발표를 자주 하는 분들을 위해 필자가 만든 앱입니다. (지난 블로그 글) 이번에 $9.99의 앱 가격을 이달 4월 말까지 $2.99 로 할인합니다. DeskBoard 앱은 유료/무료 버전 두 가지가 있습니다. 무료 버전도 모든 기능을 지원 하지만 멀티 모니터(두 대 이상 모니터)를 지원하지 않습니다. 그러므로 외부 모니터에 연결하거나 멀티 모니터 지원이 필요한 분만 유료 버전을 구매하시면 됩니다. 자세한 ..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/467&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>[Mac App] DeskBoard</category>
+            <category>app</category>
+            <category>AppStore</category>
+            <category>DeskBoard</category>
+            <category>Mac</category>
+            <category>POWERUMC</category>
+            <category>엄준일</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/467</guid>
+            <comments>http://blog.powerumc.kr/467#entry467comment</comments>
+            <pubDate>Tue, 08 Apr 2014 23:54:14 +0900</pubDate>
+        </item>
+        <item>
+            <title>[JAVASCRIPT] 왜 인터넷 웹 서비스가 느려져 가는가?</title>
+            <link>http://blog.powerumc.kr/466</link>
+            <description>인터넷 웹 서비스들이 느려졌다 HTML5 구현체가 속속 모습을 보이면서 웹 서비스들은 다양한 시도를 하고 있다. 과거에는 인터넷을 통해 콘텐트를 생산하여 전파를 했고, 이 콘텐트가 사람들을 모이게 했다. 웹을 통해 커뮤니케이션이 이루어 지면서 비슷한 관심사의 유저들에 의해 인터넷 커뮤니티가 속속 등장했다. 이것이 개인화로 이어지면서 개인이 운영하는 블로그가 많은 인기를 얻었다. 블로그를 열심히 잘 운영하면 사회 지위적인 약자도(a weak perso..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/466&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>Javascript</category>
+            <category>Ajax</category>
+            <category>angular</category>
+            <category>AngularJS</category>
+            <category>Comet</category>
+            <category>Javascript</category>
+            <category>over engineering</category>
+            <category>Web DB</category>
+            <category>web socket</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/466</guid>
+            <comments>http://blog.powerumc.kr/466#entry466comment</comments>
+            <pubDate>Tue, 08 Apr 2014 00:41:08 +0900</pubDate>
+        </item>
+        <item>
+            <title>[Mono] Mono 플랫폼에서 데스크탑 응용 프로그램 개발 3가지 방법</title>
+            <link>http://blog.powerumc.kr/465</link>
+            <description>Mono 데스크탑 응용 프로그램 개발 3가지 방법 클라이언트 응용 프로그램 또는 데스크탑 응용 프로그램을 Mono로 만든다면, 어떤 방법으로 만들면 좋을까? 이 세 가지 방법을 알아본다. 1. System.Windows.Forms System.Windows.Forms(일명 윈폼-WinForm)으로 GDI(그래픽 장치 인터페이스(Graphics Device Interface)의 APIs를 객체지향적으로 제공하는 것을 일컷는다. 이제 대한 자세한 설명은..&lt;div style=&quot;text-align:left; padding-top:10px;clear:both&quot;&gt;
+                &lt;iframe src=&quot;//www.facebook.com/plugins/like.php?href=http://blog.powerumc.kr/465&amp;amp;layout=standard&amp;amp;show_faces=true&amp;amp;width=310&amp;amp;action=like&amp;amp;font=tahoma&amp;amp;colorscheme=light&amp;amp;height=65&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;border:none; overflow:hidden; width:310px; height:65px;&quot; allowTransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+            </description>
+            <category>Mono</category>
+            <category>Glade</category>
+            <category>glade#</category>
+            <category>gtk</category>
+            <category>Gtk#</category>
+            <category>mono</category>
+            <category>monodevelop</category>
+            <category>PANGO</category>
+            <category>pango#</category>
+            <author>땡초 POWERUMC</author>
+            <guid>http://blog.powerumc.kr/465</guid>
+            <comments>http://blog.powerumc.kr/465#entry465comment</comments>
+            <pubDate>Thu, 20 Mar 2014 22:18:46 +0900</pubDate>
+        </item>
+    </channel>
+</rss>

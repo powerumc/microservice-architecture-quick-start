@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Powerumc.RssFeeds.Repositor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Powerumc.RssFeeds.Services", "src\Powerumc.RssFeeds.Services\Powerumc.RssFeeds.Services.csproj", "{636FCED1-F2B1-4030-B552-0D3FBECBC1D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Powerumc.RssFeeds.BlogRss.Api", "src\Powerumc.RssFeeds.BlogRss.Api\Powerumc.RssFeeds.BlogRss.Api.csproj", "{4378907C-6088-45F6-826B-7EC4E091EA28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,7 @@ Global
 		{F84EF393-0D5A-4E03-B8EE-D7ED04AC6262} = {4DA74E73-14FE-4646-94FD-79E2EA1AB364}
 		{5DE3996D-7C4B-4BA2-B931-71378B59F62B} = {4DA74E73-14FE-4646-94FD-79E2EA1AB364}
 		{636FCED1-F2B1-4030-B552-0D3FBECBC1D1} = {4DA74E73-14FE-4646-94FD-79E2EA1AB364}
+		{4378907C-6088-45F6-826B-7EC4E091EA28} = {9A4C0CB1-1232-4889-98EB-AD25084FE055}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9DE527CE-EE16-453B-8763-F8F88998BA2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -139,5 +142,17 @@ Global
 		{636FCED1-F2B1-4030-B552-0D3FBECBC1D1}.Release|x64.Build.0 = Release|Any CPU
 		{636FCED1-F2B1-4030-B552-0D3FBECBC1D1}.Release|x86.ActiveCfg = Release|Any CPU
 		{636FCED1-F2B1-4030-B552-0D3FBECBC1D1}.Release|x86.Build.0 = Release|Any CPU
+		{4378907C-6088-45F6-826B-7EC4E091EA28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4378907C-6088-45F6-826B-7EC4E091EA28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4378907C-6088-45F6-826B-7EC4E091EA28}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4378907C-6088-45F6-826B-7EC4E091EA28}.Debug|x64.Build.0 = Debug|Any CPU
+		{4378907C-6088-45F6-826B-7EC4E091EA28}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4378907C-6088-45F6-826B-7EC4E091EA28}.Debug|x86.Build.0 = Debug|Any CPU
+		{4378907C-6088-45F6-826B-7EC4E091EA28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4378907C-6088-45F6-826B-7EC4E091EA28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4378907C-6088-45F6-826B-7EC4E091EA28}.Release|x64.ActiveCfg = Release|Any CPU
+		{4378907C-6088-45F6-826B-7EC4E091EA28}.Release|x64.Build.0 = Release|Any CPU
+		{4378907C-6088-45F6-826B-7EC4E091EA28}.Release|x86.ActiveCfg = Release|Any CPU
+		{4378907C-6088-45F6-826B-7EC4E091EA28}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
