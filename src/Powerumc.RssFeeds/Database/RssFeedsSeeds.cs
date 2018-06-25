@@ -17,7 +17,7 @@ namespace Powerumc.RssFeeds.Database
                 var rssFeed1 = new Database.Models.RssFeed
                 {
                     Title = "Powerumc Blog",
-                    Url = "http://localhost:5001/rss",
+                    Url = "http://blog/rss",
                     CreateDate = DateTime.Now,
                     ModifyDate = DateTime.Now
                 };
