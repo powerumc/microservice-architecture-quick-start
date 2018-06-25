@@ -14,6 +14,9 @@
 
 
 ## Infrastructure
+- [ ] Kubernetes
+- [x] Docker
+- [x] Docker-Compose
 - [ ] [Ocelot](https://github.com/ThreeMammals/Ocelot) (Api Gateway)
 - [x] NLog
 - [x] Swagger Integration
