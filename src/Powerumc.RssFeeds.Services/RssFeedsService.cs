@@ -39,6 +39,11 @@ namespace Powerumc.RssFeeds.Services
         public async Task<PagingResult<IEnumerable<Domain.Responses.V1.RssFeedResponse>>> ListAsync(
             Expression<Func<Database.Models.RssFeed, bool>> expression, PagingInfo pagingInfo)
         {
+            Guard.ThrowIfNull(pagingInfo, nameof(pagingInfo));
+
+            pagingInfo.PageNo = pagingInfo.PageNo != 0 ? pagingInfo.PageNo : 1;
+            pagingInfo.PageSize = pagingInfo.PageSize != 0 ? pagingInfo.PageSize : int.MaxValue;
+            
             var result = await _repository.List(expression, pagingInfo);
 
             return await Task.FromResult(new PagingResult<IEnumerable<Domain.Responses.V1.RssFeedResponse>>
