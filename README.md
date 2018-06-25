@@ -33,6 +33,8 @@ Domain Driven Development
 - [ ] ValueObject
 - [x] CQRS
 - [x] Event Sourcing
+- [x] EventBus
+- [ ] EventBus by RabbitMq
 - [ ] Unit Of Work
 
 
