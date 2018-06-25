@@ -14,9 +14,13 @@
 
 
 ## Infrastructure
+
+Orchestration
 - [ ] Kubernetes
 - [x] Docker
 - [x] Docker-Compose
+
+Infrastructure
 - [ ] [Ocelot](https://github.com/ThreeMammals/Ocelot) (Api Gateway)
 - [x] NLog
 - [x] Swagger Integration
@@ -26,7 +30,6 @@
 - [ ] AutoMapper
 - [x] Data Protection
 - [x] Polly
-- [ ] Health Check
 
 Domain Driven Development
 - [x] Aggregate Root
@@ -36,6 +39,10 @@ Domain Driven Development
 - [x] EventBus
 - [ ] EventBus by RabbitMq
 - [ ] Unit Of Work
+
+Monitoring
+- [ ] Health Check
+- [ ] App.Metrics Integration
 
 
 ## Run
