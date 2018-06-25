@@ -11,8 +11,6 @@
     <ProjectReference Include="..\Powerumc.RssFeeds\Powerumc.RssFeeds.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Extensions.Http, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60">
-      <HintPath>..\..\..\..\..\..\Users\powerumc\.nuget\packages\microsoft.extensions.http\2.1.0\lib\netstandard2.0\Microsoft.Extensions.Http.dll</HintPath>
-    </Reference>
+    <Reference Include="Microsoft.Extensions.Http, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" />
   </ItemGroup>
 </Project>
