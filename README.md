@@ -19,7 +19,6 @@
 - [x] Swagger Integration
 - [x] Entity Framework Core DbContext
 - [x] TraceId about Request
-- [ ] Exception Handling
 - [x] Guard
 - [ ] AutoMapper
 - [x] Data Protection
@@ -28,7 +27,7 @@
 
 Domain Driven Development
 - [x] Aggregate Root
-- [x] ValueObject
+- [ ] ValueObject
 - [x] CQRS
 - [x] Event Sourcing
 - [ ] Unit Of Work
