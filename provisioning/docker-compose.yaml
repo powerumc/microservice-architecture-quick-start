@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  api:
+    image: powerumc/powerumc.rssfeeds.api
+    build:
+      context: ..
+      dockerfile: ./provisioning/dockerfile/Powerumc.RssFeeds.Api/Dockerfile.development
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://localhost:5000
+    ports:
+      - "5000:80"
+    links:
+      - blog
+
+  blog:
+    image: powerumc/powerumc.rssfeeds.blogrss.api
+    build:
+      context: ..
+      dockerfile: ./provisioning/dockerfile/Powerumc.RssFeeds.BlogRss.Api/Dockerfile.development
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://localhost:5001
+    ports:
+      - "5001:80"
