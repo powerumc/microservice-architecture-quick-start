@@ -22,14 +22,14 @@ Orchestration
 
 Infrastructure
 - [ ] [Ocelot](https://github.com/ThreeMammals/Ocelot) (Api Gateway)
-- [x] NLog
-- [x] Swagger Integration
-- [x] Entity Framework Core DbContext
+- [x] [NLog](https://github.com/NLog/NLog)
+- [x] Swagger Integration ([Swashbuckle](https://github.com/domaindrivendev/Swashbuckle))
+- [x] Entity Framework Core Code First
 - [x] TraceId about Request
 - [x] Guard
-- [ ] AutoMapper
+- [ ] [AutoMapper](http://automapper.org/)
 - [x] Data Protection
-- [x] Polly
+- [x] [Polly](https://github.com/App-vNext/Polly)
 
 Domain Driven Development
 - [x] Aggregate Root
