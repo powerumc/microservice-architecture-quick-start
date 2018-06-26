@@ -41,7 +41,7 @@ Domain Driven Development
 - [ ] Unit Of Work
 
 Monitoring
-- [ ] Health Check
+- [x] Health Check
 - [ ] App.Metrics Integration
 
 

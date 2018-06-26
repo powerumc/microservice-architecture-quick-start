@@ -39,9 +39,7 @@ namespace Powerumc.RssFeeds.Api
 
             services.AddApiVersioning()
                 .AddHttpClient()
-                .AddHealthChecks(checks =>
-                {
-                });
+                .AddHealthChecks(checks => { checks.AddUrlCheck("https://google.com"); });
 
             services.AddRssFeedsConfigurations(_env, options =>
             {
