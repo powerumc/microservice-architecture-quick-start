@@ -41,7 +41,6 @@ namespace Powerumc.RssFeeds.Api
                 .AddHttpClient()
                 .AddHealthChecks(checks =>
                 {
-                    checks.Groups
                 });
 
             services.AddRssFeedsConfigurations(_env, options =>
