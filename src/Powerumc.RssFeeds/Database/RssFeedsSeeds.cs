@@ -18,8 +18,8 @@ namespace Powerumc.RssFeeds.Database
                 {
                     Title = "Powerumc Blog",
                     Url = "http://blog/rss",
-                    CreateDate = DateTime.Now,
-                    ModifyDate = DateTime.Now
+                    CreatedDate = DateTime.Now,
+                    ModifiedDate = DateTime.Now
                 };
 
                 dbContext.RssFeeds.Add(rssFeed1);

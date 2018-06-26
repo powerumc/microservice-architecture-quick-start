@@ -41,6 +41,7 @@ namespace Powerumc.RssFeeds.Api
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
                 .ConfigureLogging(logging => { logging.SetMinimumLevel(LogLevel.Trace); })
-                .UseNLog();
+                .UseNLog()
+                .UseHealthChecks("/hc");
     }
 }

@@ -9,14 +9,14 @@ using Powerumc.RssFeeds.Repositories;
 
 namespace Powerumc.RssFeeds.Services.Handlers
 {
-    public class RssFeedCreateDomainEventHandler : IDomainEventHandler<RssFeedCreateDomainEvent>
+    public class RssFeedCreatedDomainEventHandler : IDomainEventHandler<RssFeedCreatedDomainEvent>
     {
         private readonly TraceId _traceId;
-        private readonly ILogger<RssFeedCreateDomainEventHandler> _logger;
+        private readonly ILogger<RssFeedCreatedDomainEventHandler> _logger;
         private readonly IRssFeedsRepository _rssFeedsRepository;
 
-        public RssFeedCreateDomainEventHandler(TraceId traceId,
-            ILogger<RssFeedCreateDomainEventHandler> logger,
+        public RssFeedCreatedDomainEventHandler(TraceId traceId,
+            ILogger<RssFeedCreatedDomainEventHandler> logger,
             IRssFeedsRepository rssFeedsRepository)
         {
             _traceId = traceId;
@@ -24,7 +24,7 @@ namespace Powerumc.RssFeeds.Services.Handlers
             _rssFeedsRepository = rssFeedsRepository;
         }
 
-        public async Task Handle(RssFeedCreateDomainEvent @event)
+        public async Task Handle(RssFeedCreatedDomainEvent @event)
         {
             _logger.Log(_traceId, @event.ToJson());
 
@@ -32,8 +32,8 @@ namespace Powerumc.RssFeeds.Services.Handlers
             {
                 Title = @event.Author.Title,
                 Url = @event.Author.Url,
-                CreateDate = DateTime.UtcNow,
-                ModifyDate = DateTime.UtcNow
+                CreatedDate = DateTime.UtcNow,
+                ModifiedDate = DateTime.UtcNow
             });
         }
     }

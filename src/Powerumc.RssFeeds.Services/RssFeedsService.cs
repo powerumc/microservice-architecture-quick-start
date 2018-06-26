@@ -61,7 +61,7 @@ namespace Powerumc.RssFeeds.Services
             
             _logger.Log(_traceId, request.ToJson());
             
-            _eventBus.Publish(new RssFeedCreateDomainEvent(new Author(request.Title, request.Url)));
+            _eventBus.Publish(new RssFeedCreatedDomainEvent(new Author(request.Title, request.Url)));
 
             await Task.CompletedTask;
         }
@@ -73,8 +73,8 @@ namespace Powerumc.RssFeeds.Services
                 Id = model.Id,
                 Title = model.Title,
                 Url = model.Url,
-                CreateDate = model.CreateDate,
-                ModifyDate = model.ModifyDate
+                CreateDate = model.CreatedDate,
+                ModifyDate = model.ModifiedDate
             };
         }
     }

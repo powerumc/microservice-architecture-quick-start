@@ -5,6 +5,6 @@ namespace Powerumc.RssFeeds.Domain
     public class DomainEvent : IDomainEvent
     {
         public Guid Id { get; } = Guid.NewGuid();
-        public DateTime CreateDate { get; } = DateTime.Now;
+        public DateTime CreatedDate { get; } = DateTime.Now;
     }
 }

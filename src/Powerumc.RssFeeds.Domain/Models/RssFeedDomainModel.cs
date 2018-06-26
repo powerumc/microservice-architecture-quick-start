@@ -16,7 +16,7 @@ namespace Powerumc.RssFeeds.Domain.Models
 
         private void AddRssFeedDomainEvent(Author author)
         {
-            var domainEvent = new RssFeedCreateDomainEvent(author);
+            var domainEvent = new RssFeedCreatedDomainEvent(author);
             
             AddDomainEvent(domainEvent);
         }

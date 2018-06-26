@@ -2,11 +2,11 @@
 
 namespace Powerumc.RssFeeds.Domain.Events
 {
-    public class RssFeedCreateDomainEvent : DomainEvent
+    public class RssFeedCreatedDomainEvent : DomainEvent
     {
         public Author Author { get; }
 
-        public RssFeedCreateDomainEvent(Author author)
+        public RssFeedCreatedDomainEvent(Author author)
         {
             this.Author = author;
         }

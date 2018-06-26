@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.HealthChecks;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Powerumc.RssFeeds.Api.Infrastructure.Extensions;
@@ -37,7 +38,11 @@ namespace Powerumc.RssFeeds.Api
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddApiVersioning()
-                .AddHttpClient();
+                .AddHttpClient()
+                .AddHealthChecks(checks =>
+                {
+                    checks.Groups
+                });
 
             services.AddRssFeedsConfigurations(_env, options =>
             {

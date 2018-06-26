@@ -15,9 +15,9 @@ namespace Powerumc.RssFeeds.Database.Models
         public string Url { get; set; }
         
         [Required]
-        public DateTime CreateDate { get; set; }
+        public DateTime CreatedDate { get; set; }
         
         [Required]
-        public DateTime ModifyDate { get; set; }
+        public DateTime ModifiedDate { get; set; }
     }
 }
