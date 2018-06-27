@@ -50,6 +50,7 @@ namespace Powerumc.RssFeeds.Api
                 options.Filter = new MetricsFilter().WhereType(MetricType.Timer);
                 options.MetricsOutputFormatter = new MetricsJsonOutputFormatter();
             }).Build();
+            
             services.AddMetrics(metrics)
                 .AddMetricsTrackingMiddleware()
                 .AddMetricsEndpoints()
