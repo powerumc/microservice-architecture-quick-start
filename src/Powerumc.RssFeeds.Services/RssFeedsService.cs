@@ -73,8 +73,8 @@ namespace Powerumc.RssFeeds.Services
                 Id = model.Id,
                 Title = model.Title,
                 Url = model.Url,
-                CreateDate = model.CreatedDate,
-                ModifyDate = model.ModifiedDate
+                CreatedDate = model.CreatedDate,
+                ModifiedDate = model.ModifiedDate
             };
         }
     }
