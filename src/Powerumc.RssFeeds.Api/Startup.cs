@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using App.Metrics;
+using App.Metrics.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -9,7 +11,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.HealthChecks;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Powerumc.RssFeeds.Api.Infrastructure.Extensions;
@@ -38,8 +39,14 @@ namespace Powerumc.RssFeeds.Api
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddApiVersioning()
-                .AddHttpClient()
-                .AddHealthChecks(checks => { checks.AddUrlCheck("https://google.com"); });
+                .AddHttpClient();
+
+            services.AddMetrics(AppMetrics.CreateDefaultBuilder().Build())
+                .AddMetricsTrackingMiddleware()
+                .AddMetricsEndpoints()
+                .AddHealth()
+                .AddHealthEndpoints();
+            
 
             services.AddRssFeedsConfigurations(_env, options =>
             {
@@ -64,6 +71,9 @@ namespace Powerumc.RssFeeds.Api
             {
                 app.UseHsts();
             }
+
+            app.UseMetricsAllMiddleware()
+                .UseMetricsEndpoint();
             
             app.UseRssFeedsConfigurationsOptions();
             feedsDbContextFactory.Seed();

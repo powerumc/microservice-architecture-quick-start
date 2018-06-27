@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
+using App.Metrics.AspNetCore.Health;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -42,6 +43,9 @@ namespace Powerumc.RssFeeds.Api
                 .UseStartup<Startup>()
                 .ConfigureLogging(logging => { logging.SetMinimumLevel(LogLevel.Trace); })
                 .UseNLog()
-                .UseHealthChecks("/hc");
+                .UseMetricsWebTracking()
+                .UseMetricsEndpoints()
+                .UseHealth()
+                .UseHealthEndpoints();
     }
 }
