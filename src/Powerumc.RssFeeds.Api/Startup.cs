@@ -41,7 +41,7 @@ namespace Powerumc.RssFeeds.Api
             services.AddApiVersioning()
                 .AddHttpClient();
 
-            services.AddMetrics(AppMetrics.CreateDefaultBuilder().Build())
+            services.AddMetrics()
                 .AddMetricsTrackingMiddleware()
                 .AddMetricsEndpoints()
                 .AddHealth()
