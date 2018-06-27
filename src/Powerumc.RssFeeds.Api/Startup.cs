@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using App.Metrics;
 using App.Metrics.Extensions.DependencyInjection;
+using App.Metrics.Filtering;
+using App.Metrics.Formatters.Json;
+using App.Metrics.Scheduling;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -41,12 +44,21 @@ namespace Powerumc.RssFeeds.Api
             services.AddApiVersioning()
                 .AddHttpClient();
 
-            services.AddMetrics()
+            var metrics = AppMetrics.CreateDefaultBuilder().Report.ToConsole(options =>
+            {
+                options.FlushInterval = TimeSpan.FromSeconds(5);
+                options.Filter = new MetricsFilter().WhereType(MetricType.Timer);
+                options.MetricsOutputFormatter = new MetricsJsonOutputFormatter();
+            }).Build();
+            services.AddMetrics(metrics)
                 .AddMetricsTrackingMiddleware()
                 .AddMetricsEndpoints()
                 .AddHealth()
                 .AddHealthEndpoints();
             
+            var scheduler = new AppMetricsTaskScheduler(TimeSpan.FromSeconds(5),
+                async () => await Task.WhenAll(metrics.ReportRunner.RunAllAsync()));
+            scheduler.Start();
 
             services.AddRssFeedsConfigurations(_env, options =>
             {
