@@ -25,7 +25,7 @@ namespace Powerumc.RssFeeds.Extensions
 			if(string.IsNullOrWhiteSpace(jsonStr))
 				return default(T);
 
-            return JsonConvert.DeserializeObject<T>(jsonStr);
+            return JsonConvert.DeserializeObject<T>(jsonStr, settings ?? DefaultSettings);
         }
 
 		public static long ToTimeStamp(this DateTime dateTime)
