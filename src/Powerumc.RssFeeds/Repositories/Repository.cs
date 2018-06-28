@@ -22,22 +22,39 @@ namespace Powerumc.RssFeeds.Repositories
             _logger = logger;
             _dbContextFactory = dbContextFactory;
         }
-        
-        public virtual async Task<TDatabaseModel> GetAsync(long id)
+
+        public virtual async Task<TDatabaseModel> GetAsync(long id,
+            Func<IQueryable<TDatabaseModel>, IQueryable<TDatabaseModel>> additionQuery = null)
         {
             using (var dbContext = _dbContextFactory.CreateRead())
             {
-                return await dbContext
+                var query = dbContext
                     .Set<TDatabaseModel>()
-                    .SingleOrDefaultAsync(o => o.Id == id);
+                    .AsQueryable();
+
+                if (additionQuery != null)
+                {
+                    query = additionQuery(query);
+                }
+                
+                return await query.SingleOrDefaultAsync(o => o.Id == id);
             }
         }
 
-        public virtual async Task<PagingResult<IEnumerable<TDatabaseModel>>> List(Expression<Func<TDatabaseModel, bool>> expression, PagingInfo pagingInfo)
+        public virtual async Task<PagingResult<IEnumerable<TDatabaseModel>>> List(
+            Expression<Func<TDatabaseModel, bool>> expression, PagingInfo pagingInfo,
+            Func<IQueryable<TDatabaseModel>, IQueryable<TDatabaseModel>> additionQuery = null)
         {
             using (var dbContext = _dbContextFactory.CreateRead())
             {
-                var query = dbContext.Set<TDatabaseModel>().Select(o => o);
+                var query = dbContext.
+                    Set<TDatabaseModel>().
+                    AsQueryable();
+
+                if (additionQuery != null)
+                {
+                    query = additionQuery(query);
+                }
 
                 if (expression != null)
                 {
