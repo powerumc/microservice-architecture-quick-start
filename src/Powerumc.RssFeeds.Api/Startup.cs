@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using App.Metrics;
+using App.Metrics.Extensions.DependencyInjection;
+using App.Metrics.Filtering;
+using App.Metrics.Formatters.Json;
+using App.Metrics.Scheduling;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -9,7 +14,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.HealthChecks;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Powerumc.RssFeeds.Api.Infrastructure.Extensions;
@@ -38,8 +42,24 @@ namespace Powerumc.RssFeeds.Api
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddApiVersioning()
-                .AddHttpClient()
-                .AddHealthChecks(checks => { checks.AddUrlCheck("https://google.com"); });
+                .AddHttpClient();
+
+            var metrics = AppMetrics.CreateDefaultBuilder().Report.ToConsole(options =>
+            {
+                options.FlushInterval = TimeSpan.FromSeconds(5);
+                options.Filter = new MetricsFilter().WhereType(MetricType.Timer);
+                options.MetricsOutputFormatter = new MetricsJsonOutputFormatter();
+            }).Build();
+            
+            services.AddMetrics(metrics)
+                .AddMetricsTrackingMiddleware()
+                .AddMetricsEndpoints()
+                .AddHealth()
+                .AddHealthEndpoints();
+            
+            var scheduler = new AppMetricsTaskScheduler(TimeSpan.FromSeconds(5),
+                async () => await Task.WhenAll(metrics.ReportRunner.RunAllAsync()));
+            scheduler.Start();
 
             services.AddRssFeedsConfigurations(_env, options =>
             {
@@ -64,6 +84,9 @@ namespace Powerumc.RssFeeds.Api
             {
                 app.UseHsts();
             }
+
+            app.UseMetricsAllMiddleware()
+                .UseMetricsEndpoint();
             
             app.UseRssFeedsConfigurationsOptions();
             feedsDbContextFactory.Seed();

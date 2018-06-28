@@ -42,7 +42,8 @@ Domain Driven Development
 
 Monitoring
 - [x] Health Check
-- [ ] App.Metrics Integration
+- [x] [App.Metrics](https://github.com/AppMetrics/AppMetrics) Integration
+- [ ] [Grafana](https://www.datadoghq.com/ts/grafana-alternative)
 
 
 ## Run
