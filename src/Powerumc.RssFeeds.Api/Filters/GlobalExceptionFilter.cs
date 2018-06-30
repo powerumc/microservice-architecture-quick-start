@@ -25,6 +25,9 @@ namespace Powerumc.RssFeeds.Api.Filters
             {
                 StatusCode = StatusCodes.Status500InternalServerError
             };
+            
+            _loggerFactory.CreateLogger(context.RouteData.Values["controller"].ToString())
+                .LogError(context.Exception, "");
         }
 
         public override Task OnExceptionAsync(ExceptionContext context)
@@ -33,6 +36,9 @@ namespace Powerumc.RssFeeds.Api.Filters
             {
                 StatusCode = StatusCodes.Status500InternalServerError
             };
+
+            _loggerFactory.CreateLogger(context.RouteData.Values["controller"].ToString())
+                .LogError(context.Exception, "");
 
             return Task.CompletedTask;
         }

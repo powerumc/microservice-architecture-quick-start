@@ -36,7 +36,6 @@ namespace Powerumc.RssFeeds.Api.Controllers.V1
         [ProducesResponseType(typeof(Domain.Responses.ErrorResponse), 500)]
         public async Task<IActionResult> CreateAsync([FromBody] Domain.Requests.V1.RssFeedCreateRequest request)
         {
-            throw new Exception("Test");
             await _rssFeedsService.CreateAsync(request);
             return Ok();
         }
