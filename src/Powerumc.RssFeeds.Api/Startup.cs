@@ -16,6 +16,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Powerumc.RssFeeds.Api.Filters;
 using Powerumc.RssFeeds.Api.Infrastructure.Extensions;
 using Powerumc.RssFeeds.Database;
 using Powerumc.RssFeeds.Services.Handlers;
@@ -38,7 +39,7 @@ namespace Powerumc.RssFeeds.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services
-                .AddMvc()
+                .AddMvc(options => { options.Filters.Add(typeof(GlobalExceptionFilter)); })
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddApiVersioning()

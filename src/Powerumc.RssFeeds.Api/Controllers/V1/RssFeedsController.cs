@@ -36,16 +36,9 @@ namespace Powerumc.RssFeeds.Api.Controllers.V1
         [ProducesResponseType(typeof(Domain.Responses.ErrorResponse), 500)]
         public async Task<IActionResult> CreateAsync([FromBody] Domain.Requests.V1.RssFeedCreateRequest request)
         {
-            try
-            {                
-                await _rssFeedsService.CreateAsync(request);
-                return Ok();
-            }
-            catch (Exception e)
-            {
-                _logger.LogError(_traceId, e);
-                return Error(_traceId);
-            }
+            throw new Exception("Test");
+            await _rssFeedsService.CreateAsync(request);
+            return Ok();
         }
 
         [HttpGet]
@@ -53,29 +46,13 @@ namespace Powerumc.RssFeeds.Api.Controllers.V1
         [ProducesResponseType(typeof(ErrorResponse), 500)]
         public async Task<IActionResult> ListAsync([FromQuery] Domain.PagingInfo request)
         {
-            try
-            {
-                return Ok(await _rssFeedsService.ListAsync(null, request));
-            }
-            catch (Exception e)
-            {
-                _logger.LogError(_traceId, e);
-                return Error(_traceId);
-            }
+            return Ok(await _rssFeedsService.ListAsync(null, request));
         }
 
         [HttpGet("feeds")]
         public async Task<IActionResult> ListFeedsItemsAsync()
         {
-            try
-            {
-                return Ok(await _rssFeedsHttpService.AllItemsAsync());
-            }
-            catch (Exception e)
-            {
-                _logger.LogError(_traceId, e);
-                return Error(_traceId);
-            }
+            return Ok(await _rssFeedsHttpService.AllItemsAsync());
         }
     }
 }
